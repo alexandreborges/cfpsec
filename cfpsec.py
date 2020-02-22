@@ -78,7 +78,7 @@ def cfplist(param):
                    if (cfptext[i].get('name')):
                        print((mycolors.foreground.yellow + "%-35s" % cfptext[i]['name'][:35]),end='')
                        print((mycolors.foreground.lightgreen + " %s" % cfptext[i]['cfp_deadline'][:10]),end='')
-                       print((mycolors.foreground.pink + " %s" % cfptext[i]['conf_start_date'][:10]),end='')
+                       print((mycolors.foreground.cyan + " %s" % cfptext[i]['conf_start_date'][:10]),end='')
                        print((mycolors.foreground.orange + " %-16s" % cfptext[i]['city'][:16]),end='')
                        print((mycolors.foreground.lightcyan + " %-20s" % cfptext[i]['twitter'][:18]),end='')
                        print((mycolors.foreground.lightred + "%s" % cfptext[i]['website']) + mycolors.reset)
@@ -113,7 +113,7 @@ def uplist(param):
                 for i in range(0, len(uptext)):
                    if (uptext[i].get('name')):
                        print((mycolors.foreground.yellow + "%-50s" % uptext[i]['name'][:50]),end='')
-                       print((mycolors.foreground.lightblue + " %-20s" % uptext[i]['city'][:20]),end='')
+                       print((mycolors.foreground.lightcyan + " %-20s" % uptext[i]['city'][:20]),end='')
                        print((mycolors.foreground.lightgreen + " %-7s" % uptext[i]['country']),end='')
                        print((mycolors.foreground.lightred + 4*" " + "%s" % uptext[i]['conf_start_date'][:10]) + mycolors.reset )
                        print(mycolors.reset, end="")
