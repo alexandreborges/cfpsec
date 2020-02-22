@@ -25,6 +25,7 @@ Copyright (C)  2020 Alexandre Borges <alexandreborges at blackstormsecurity dot 
  
  CFPsec has been tested on Ubuntu, Kali Linux 2019, Windows 8.1 and 10. Before using CFPsec, execute:
 
+        $ Install Python 3.7 or newer.
         $ pip3.7 install -r requirements.txt
  
  # USAGE
