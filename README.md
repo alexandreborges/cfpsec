@@ -1,7 +1,7 @@
 # cfpsec
 CFPsec is program to list Call For Papers or upcoming Hacking/Security Conferences based on cfptime.org website.
 
-[<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/alexandreborges/cfpsec?color=Red&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases/tag/1.0.1) [<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/alexandreborges/cfpsec?color=Yellow&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases) [<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/alexandreborges/cfpsec?label=Release%20Date&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases) [<img alt="GitHub" src="https://img.shields.io/github/license/alexandreborges/cfpsec?style=for-the-badge">](https://github.com/alexandreborges/cfpsec/blob/master/LICENSE) 
+[<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/alexandreborges/cfpsec?color=Red&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases/tag/1.0.2) [<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/alexandreborges/cfpsec?color=Yellow&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases) [<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/alexandreborges/cfpsec?label=Release%20Date&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases) [<img alt="GitHub" src="https://img.shields.io/github/license/alexandreborges/cfpsec?style=for-the-badge">](https://github.com/alexandreborges/cfpsec/blob/master/LICENSE) 
 [<img alt="GitHub stars" src="https://img.shields.io/github/stars/alexandreborges/cfpsec?logoColor=Red&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/stargazers) [<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ale_sp_brazil?color=blueviolet&style=for-the-badge">](https://twitter.com/ale_sp_brazil)
 
 ![Alt text](pictures/picture_1.jpg?raw=true "Title")
@@ -21,7 +21,7 @@ Copyright (C)  2020 Alexandre Borges <alexandreborges at blackstormsecurity dot 
 
       See GNU Public License on <http://www.gnu.org/licenses/>.
       
- # Current Version: 1.0.1
+ # Current Version: 1.0.2
  
  CFPsec has been tested on Ubuntu, Kali Linux 2019, Windows 8.1 and 10. Before using CFPsec, execute:
 
@@ -45,9 +45,15 @@ To use the CFPsec, execute the command as shown below:
       -h, --help            show this help message and exit
       -c CFP, --cfp CFP     List Call For Papers of Hacking/Securiy Conferences.
       -u UPCOMING, --upcoming UPCOMING List all upcoming Hacking/Security Conferences.
-      -w WIN, --win WIN     Set to 1 whether you running on Windows.
+      -w WIN, --win WIN     Set to 1 whether you are running it on Windows.
  
  # HISTORY
+
+Version 1.0.2:
+
+      This version:
+      
+            * Introduces a small fix. 
 
 Version 1.0.1:
 
