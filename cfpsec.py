@@ -1,4 +1,4 @@
-#!/usr/bin/python3.7
+#!/usr/bin/python
 
 # Copyright (C)  2020 Alexandre Borges <ab@blackstormsecurity.com>
 #
@@ -26,7 +26,7 @@ from datetime import datetime
 __author__ = "Alexandre Borges"
 __copyright__ = "Copyright 2020, Alexandre Borges"
 __license__ = "GNU General Public License v3.0"
-__version__ = "1.0"
+__version__ = "1.0.1"
 __email__ = "alexandreborges at blackstormsecurity.com"
 
 cfpurl = 'https://api.cfptime.org/api/cfps'

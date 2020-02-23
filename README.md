@@ -21,12 +21,13 @@ Copyright (C)  2020 Alexandre Borges <alexandreborges at blackstormsecurity dot 
 
       See GNU Public License on <http://www.gnu.org/licenses/>.
       
- # Current Version: 1.0
+ # Current Version: 1.0.1
  
  CFPsec has been tested on Ubuntu, Kali Linux 2019, Windows 8.1 and 10. Before using CFPsec, execute:
 
         $ Install Python 3.7 or newer.
-        $ pip3.7 install -r requirements.txt
+        $ pip install -r requirements.txt
+        $ pip install cfpsec
  
  # USAGE
 
@@ -47,6 +48,12 @@ To use the CFPsec, execute the command as shown below:
       -w WIN, --win WIN     Set to 1 whether you running on Windows.
  
  # HISTORY
+
+Version 1.0.1:
+
+      This version:
+      
+            * Introduces the possibility to install the cfpsec by using the Python pip module: pip install cfpsec. 
 
 Version 1.0:
 
