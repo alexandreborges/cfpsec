@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Copyright (C)  2020 Alexandre Borges <ab@blackstormsecurity.com>
+# Copyright (C)  2022 Alexandre Borges <ab@blackstormsecurity.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -24,9 +24,9 @@ from colorama import init, Fore, Back, Style
 from datetime import datetime
 
 __author__ = "Alexandre Borges"
-__copyright__ = "Copyright 2020, Alexandre Borges"
+__copyright__ = "Copyright 2022, Alexandre Borges"
 __license__ = "GNU General Public License v3.0"
-__version__ = "1.0.2"
+__version__ = "1.1"
 __email__ = "alexandreborges at blackstormsecurity.com"
 
 cfpurl = 'https://api.cfptime.org/api/cfps'
@@ -98,6 +98,7 @@ def cfplist(param):
         print(mycolors.reset)
         exit(1)
 
+
 def uplist(param):
 
     uptext = ''
@@ -132,10 +133,10 @@ if __name__ == "__main__":
     upcoming = 0
     win = 0
 
-    parser = argparse.ArgumentParser(prog=None, description="CFPsec lists Call For Papers or upcoming Hacking/Security Conferences based on cfptime.org website.", usage= "python cfpsec.py -c <0|1> -u <0|1> -w <0|1>")
+    parser = argparse.ArgumentParser(prog=None, description="CFPsec lists Call For Papers or upcoming Hacking/Security Conferences based on cfptime.org website. The current version is 1.1.", usage= "python cfpsec.py -c <0|1> -u <0|1> -w <0|1>")
     parser.add_argument('-c', '--cfp', dest='cfp',type=int, default=1, help='List Call For Papers of Hacking/Securiy Conferences.')
     parser.add_argument('-u', '--upcoming', dest='upcoming',type=int, default=0, help='List all upcoming Hacking/Security Conferences.')
-    parser.add_argument('-w', '--win', dest='win',type=int, default=0, help='Set to 1 whether you are running it on Windows.')
+    parser.add_argument('-w', '--win', dest='win',type=int, default=0, help='Set to 1 whether you are running it on Windows 10 or older.')
     
     args = parser.parse_args()
 
@@ -170,7 +171,7 @@ if __name__ == "__main__":
         print(mycolors.reset + "\n")
         print("Call for Papers -- Hacking and Security Conferences\n".center(140))
         print(mycolors.reset + "Conference Name".center(35) + "CFP end".center(12) + "CONF start".center(10) + "City".center(16) + "Twitter".center(18) + "Website".center(38), end='')
-        print("\n" + 140 * '-')
+        print(mycolors.reset + "\n" + 140 * '-')
         cfplist(cfpurl)
         print(mycolors.reset)
         exit(0)
@@ -179,7 +180,7 @@ if __name__ == "__main__":
         print(mycolors.reset + "\n")
         print("Upcoming Hacking and Security Conferences\n".center(100))
         print(mycolors.reset + "Conference Name".center(50) + "City".center(20) + "Country".center(7) + "Conference Date".center(24), end='')
-        print("\n" + 100 * '-')
+        print(mycolors.reset + "\n" + 100 * '-')
         uplist(upurl)
         print(mycolors.reset)
         exit(0)
