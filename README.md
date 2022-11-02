@@ -51,7 +51,7 @@ Version 1.2:
 
       This version:
       
-            * Small fixes has been introduced. 
+            * Small fixes have been introduced. 
             * Small structure change. 
 
 Version 1.0.2:
