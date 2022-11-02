@@ -1,7 +1,7 @@
 # cfpsec
 CFPsec is program to list Call For Papers or upcoming Hacking/Security Conferences based on cfptime.org website.
 
-[<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/alexandreborges/cfpsec?color=Red&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases/tag/1.1) [<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/alexandreborges/cfpsec?color=Yellow&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases) [<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/alexandreborges/cfpsec?label=Release%20Date&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases) [<img alt="GitHub" src="https://img.shields.io/github/license/alexandreborges/cfpsec?style=for-the-badge">](https://github.com/alexandreborges/cfpsec/blob/master/LICENSE) 
+[<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/alexandreborges/cfpsec?color=Red&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases/tag/1.2) [<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/alexandreborges/cfpsec?color=Yellow&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases) [<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/alexandreborges/cfpsec?label=Release%20Date&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases) [<img alt="GitHub" src="https://img.shields.io/github/license/alexandreborges/cfpsec?style=for-the-badge">](https://github.com/alexandreborges/cfpsec/blob/master/LICENSE) 
 [<img alt="GitHub stars" src="https://img.shields.io/github/stars/alexandreborges/cfpsec?logoColor=Red&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/stargazers) [<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ale_sp_brazil?color=blueviolet&style=for-the-badge">](https://twitter.com/ale_sp_brazil)
 
 ![Alt text](pictures/picture_1.jpg?raw=true "Title")
@@ -21,7 +21,7 @@ Copyright (C)  2022 Alexandre Borges <alexandreborges at blackstormsecurity dot 
 
       See GNU Public License on <http://www.gnu.org/licenses/>.
       
- # Current Version: 1.1
+ # Current Version: 1.2
  
  CFPsec has been tested on Ubuntu and Windows 11. Likely, it also works on other 
  operating systems. Before using CFPsec, execute:
@@ -47,11 +47,12 @@ To use the CFPsec, execute the command as shown below:
  
  # HISTORY
 
-Version 1.1:
+Version 1.2:
 
       This version:
       
-            * Small fixes. 
+            * Small fixes has been introduced. 
+            * Small structure change. 
 
 Version 1.0.2:
 

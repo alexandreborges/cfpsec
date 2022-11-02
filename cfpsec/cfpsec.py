@@ -26,7 +26,7 @@ from datetime import datetime
 __author__ = "Alexandre Borges"
 __copyright__ = "Copyright 2022, Alexandre Borges"
 __license__ = "GNU General Public License v3.0"
-__version__ = "1.1"
+__version__ = "1.2"
 __email__ = "alexandreborges at blackstormsecurity.com"
 
 cfpurl = 'https://api.cfptime.org/api/cfps'
@@ -133,7 +133,7 @@ if __name__ == "__main__":
     upcoming = 0
     win = 0
 
-    parser = argparse.ArgumentParser(prog=None, description="CFPsec lists Call For Papers or upcoming Hacking/Security Conferences based on cfptime.org website. The current version is 1.1.", usage= "python cfpsec.py -c <0|1> -u <0|1> -w <0|1>")
+    parser = argparse.ArgumentParser(prog=None, description="CFPsec lists Call For Papers or upcoming Hacking/Security Conferences based on cfptime.org website. The current version is 1.2", usage= "python cfpsec.py -c <0|1> -u <0|1> -w <0|1>")
     parser.add_argument('-c', '--cfp', dest='cfp',type=int, default=1, help='List Call For Papers of Hacking/Securiy Conferences.')
     parser.add_argument('-u', '--upcoming', dest='upcoming',type=int, default=0, help='List all upcoming Hacking/Security Conferences.')
     parser.add_argument('-w', '--win', dest='win',type=int, default=0, help='Set to 1 whether you are running it on Windows 10 or older.')
