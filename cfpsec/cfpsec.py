@@ -81,7 +81,7 @@ def cfplist(param):
                        print((mycolors.foreground.yellow + "%-35s" % cfptext[i]['name'][:35]),end='')
                        print((mycolors.foreground.lightgreen + " %s" % cfptext[i]['cfp_deadline'][:10]),end='')
                        print((mycolors.foreground.pink + " %s" % cfptext[i]['conf_start_date'][:10]),end='')
-                       print((mycolors.foreground.orange + " %-16s" % cfptext[i]['city'][:16]),end='')
+                       print((mycolors.foreground.lightgrey + " %-16s" % cfptext[i]['city'][:16]),end='')
                        print((mycolors.foreground.lightcyan + " %-20s" % cfptext[i]['twitter'][:18]),end='')
                        print((mycolors.foreground.lightred + "%s" % cfptext[i]['website']) + mycolors.reset)
                        print(mycolors.reset, end="")
