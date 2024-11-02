@@ -1,13 +1,13 @@
 # cfpsec
 CFPsec is program to list Call For Papers or upcoming Hacking/Security Conferences based on cfptime.org website.
 
-[<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/alexandreborges/cfpsec?color=Red&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases/tag/1.2) [<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/alexandreborges/cfpsec?color=Yellow&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases) [<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/alexandreborges/cfpsec?label=Release%20Date&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases) [<img alt="GitHub" src="https://img.shields.io/github/license/alexandreborges/cfpsec?style=for-the-badge">](https://github.com/alexandreborges/cfpsec/blob/master/LICENSE) 
+[<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/alexandreborges/cfpsec?color=Red&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases/tag/1.3) [<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/alexandreborges/cfpsec?color=Yellow&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases) [<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/alexandreborges/cfpsec?label=Release%20Date&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/releases) [<img alt="GitHub" src="https://img.shields.io/github/license/alexandreborges/cfpsec?style=for-the-badge">](https://github.com/alexandreborges/cfpsec/blob/master/LICENSE) 
 [<img alt="GitHub stars" src="https://img.shields.io/github/stars/alexandreborges/cfpsec?logoColor=Red&style=for-the-badge">](https://github.com/alexandreborges/cfpsec/stargazers) [<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ale_sp_brazil?color=blueviolet&style=for-the-badge">](https://twitter.com/ale_sp_brazil)
 
 ![Alt text](pictures/picture_1.jpg?raw=true "Title")
 ![Alt text](pictures/picture_2.jpg?raw=true "Title")
 
-Copyright (C)  2022 Alexandre Borges <alexandreborges at blackstormsecurity dot com>
+## Copyright (C)  2024 Alexandre Borges <alexandreborges at blackstormsecurity dot com>
 
       This program is free software: you can redistribute it and/or modify
       it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@ Copyright (C)  2022 Alexandre Borges <alexandreborges at blackstormsecurity dot 
 
       See GNU Public License on <http://www.gnu.org/licenses/>.
       
- # Current Version: 1.2
+## Current Version: 1.3
  
  CFPsec has been tested on Ubuntu and Windows 11. Likely, it also works on other 
  operating systems. Before using CFPsec, execute:
@@ -29,7 +29,7 @@ Copyright (C)  2022 Alexandre Borges <alexandreborges at blackstormsecurity dot 
         $ Install Python 3.9 or newer.
         $ pip install cfpsec
  
- # USAGE
+## USAGE
 
 To use the CFPsec, execute the command as shown below:
 
@@ -45,7 +45,14 @@ To use the CFPsec, execute the command as shown below:
       -u UPCOMING, --upcoming UPCOMING List all upcoming Hacking/Security Conferences.
       -w WIN, --win WIN     Set to 1 whether you are running it on Windows 10 or older.
  
- # HISTORY
+## HISTORY
+
+Version 1.3:
+
+      This version:
+      
+            * Fixes have been introduced. 
+            * Slight changes in the Python code. 
 
 Version 1.2:
 

@@ -9,9 +9,9 @@ with open("README.md", encoding='utf8') as readme:
 
 setup(
     name="cfpsec",
-    version="1.2",
+    version="1.3",
     author="Alexandre Borges",
-    author_email="alexandreborges@blackstormsecurity.com",
+    author_email="reverseexploit@proton.me",
     license="GNU GPL v3.0",
     url="https://github.com/alexandreborges/cfpsec",
     description=("CFPsec is a client program that retrieves the list of Call For Papers or/and upcoming Hacking/Security Conferences based on cfptime.org website."),
