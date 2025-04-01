@@ -38,7 +38,8 @@ To use the CFPsec, execute the command as shown below:
 
       usage: python cfpsec.py [--cfp] [--up]
 
-      CFPsec lists Call For Papers or upcoming Hacking/Security Conferences based on cfptime.org website.
+      CFPsec lists Call For Papers or upcoming Hacking/Security Conferences
+      based on cfptime.org website.
 
       options:
       -h, --help  show this help message and exit
@@ -78,7 +79,8 @@ Version 1.0.1:
 
       This version:
       
-            * Introduces the possibility to install the cfpsec by using the Python pip module: pip install cfpsec. 
+            * Introduces the possibility to install the cfpsec by using 
+            the Python pip module: pip install cfpsec. 
 
 Version 1.0:
 
