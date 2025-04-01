@@ -9,7 +9,7 @@ with open("README.md", encoding='utf8') as readme:
 
 setup(
     name="cfpsec",
-    version="1.3",
+    version="1.4",
     author="Alexandre Borges",
     author_email="reverseexploit@proton.me",
     license="GNU GPL v3.0",
