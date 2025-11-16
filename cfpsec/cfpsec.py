@@ -98,7 +98,29 @@ def display_data(data, fields, headers):
             continue
     print(COLORS["reset"])
 
-def cfplist():
+def save_csv(data, fields, csv_headers, csvFile):
+    """Save data to a CSV file with proper quoting and escaping."""
+    try:
+        with open(csvFile, 'w') as f:
+            # Write CSV headers with quotes
+            quoted_headers = ",".join([f'"{header}"' for header in csv_headers])
+            f.write(quoted_headers + "\n")
+            
+            # Write data rows
+            for item in data:
+                csv_fields = []
+                for field in fields:
+                    value = item.get(field['key'], '')[:field['width']].rstrip()
+                    # Escape double quotes by doubling them
+                    escaped_value = value.replace('"', '""')
+                    csv_fields.append(f'"{escaped_value}"')
+                row = ",".join(csv_fields)
+                f.write(row + "\n")
+    except Exception as e:
+        print(f"Error saving data to CSV file: {e}")
+        sys.exit(1)
+
+def cfplist(csvFile: str = None):
     """List Call For Papers."""
     data = fetch_data(CFP_URL)
     fields = [
@@ -119,7 +141,12 @@ def cfplist():
     )
     display_data(data, fields, headers)
 
-def uplist():
+    # Save the data to a CSV file if a file name is provided
+    if csvFile is not None:
+        csv_headers = ["Conference Name", "CFP End", "Conf Start", "City", "Twitter", "Website"]
+        save_csv(data, fields, csv_headers, csvFile)
+
+def uplist(csvFile: str = None):
     """List Upcoming Conferences."""
     data = fetch_data(UPCOMING_URL)
     fields = [
@@ -136,21 +163,28 @@ def uplist():
     )
     display_data(data, fields, headers)
 
+    # Save the data to a CSV file if a file name is provided
+    if csvFile is not None:
+        csv_headers = ["Conference Name", "City", "Country", "Conference Date"]
+        save_csv(data, fields, csv_headers, csvFile)
+
 def main():
     """Main function."""
     parser = argparse.ArgumentParser(
         description="CFPsec lists Call For Papers or upcoming Hacking/Security Conferences based on cfptime.org website.",
-        usage="python cfpsec.py [--cfp] [--up]"
+        usage="python cfpsec.py [--cfp] [--up] [-csv <filename>]"
     )
     parser.add_argument('--cfp', action='store_true', help='List Call For Papers of Hacking/Security Conferences.')
     parser.add_argument('--up', action='store_true', help='List all upcoming Hacking/Security Conferences.')
+    parser.add_argument('-csv', type=str, default="", required=False, help="Name of the CSV file to save the data.")
 
     args = parser.parse_args()
+    csvFile = args.csv if "csv" in args else None
 
     if args.cfp:
-        cfplist()
+        cfplist(csvFile)
     elif args.up:
-        uplist()
+        uplist(csvFile)
     else:
         parser.print_help()
 
