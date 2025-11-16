@@ -25,7 +25,7 @@ from colorama import init, Fore, Style
 __author__ = "Alexandre Borges"
 __copyright__ = "Copyright 2025, Alexandre Borges"
 __license__ = "GNU General Public License v3.0"
-__version__ = "1.5"
+__version__ = "1.6"
 __email__ = "reverseexploit@proton.me"
 
 # Constants
