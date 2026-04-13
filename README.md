@@ -7,7 +7,7 @@ CFPsec is program to list Call For Papers or upcoming Hacking/Security Conferenc
 ![Alt text](pictures/picture_1.jpg?raw=true "Title")
 ![Alt text](pictures/picture_2.jpg?raw=true "Title")
 
-### Copyright (C)  2026 Alexandre Borges <reverseexploit at proton dot  me>
+### Copyright (C)  2026 Alexandre Borges
 
       This program is free software: you can redistribute it and/or modify
       it under the terms of the GNU General Public License as published by
