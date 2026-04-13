@@ -69,7 +69,8 @@ Version 2.0:
       This version:
 
             * Adds --conf option to list all conferences (open CFP + upcoming combined).
-            * Adds --prev option to list previously held conferences with server-side pagination (--page, --page-size).
+            * Adds --prev option to list previously held conferences with server-side 
+              pagination (--page, --page-size).
             * Adds --cfp-id and --conf-id options for full detail view of a single record.
             * Adds --filter keyword search by conference name or city.
             * Adds --country filter for country-based filtering.
