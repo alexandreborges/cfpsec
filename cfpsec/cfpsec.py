@@ -30,7 +30,7 @@ from colorama import init, Fore, Style
 __author__ = "Alexandre Borges"
 __copyright__ = "Copyright 2025, Alexandre Borges"
 __license__ = "GNU General Public License v3.0"
-__version__ = "2.0.1"
+__version__ = "2.0.2"
 __email__ = "reverseexploit@proton.me"
 
 init(autoreset=False)
@@ -218,6 +218,22 @@ def _apply_filters(data, keyword=None, country=None):
             if cc in item.get("country", "").lower()
         ]
     return data
+
+
+def _filter_future(data, date_key):
+    """Keep only items whose *date_key* is today or in the future."""
+    today = date.today()
+    result = []
+    for item in data:
+        raw = item.get(date_key, "")
+        if not raw:
+            continue
+        try:
+            if date.fromisoformat(str(raw)[:10]) >= today:
+                result.append(item)
+        except ValueError:
+            continue
+    return result
 
 
 def _filter_by_days(data, date_key, days):
@@ -409,6 +425,7 @@ def conflist(keyword=None, country=None, sort=False, limit=None, days=None,
              output_format="text"):
     """List all conferences (open CFP + upcoming combined)."""
     data = fetch_data(CONF_URL)
+    data = _filter_future(data, "conf_start_date")
     data = _apply_filters(data, keyword=keyword, country=country)
     if days:
         data = _filter_by_days(data, "conf_start_date", days)
