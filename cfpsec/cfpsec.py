@@ -30,7 +30,7 @@ from colorama import init, Fore, Style
 __author__ = "Alexandre Borges"
 __copyright__ = "Copyright 2025, Alexandre Borges"
 __license__ = "GNU General Public License v3.0"
-__version__ = "2.0"
+__version__ = "2.0.1"
 __email__ = "reverseexploit@proton.me"
 
 init(autoreset=False)

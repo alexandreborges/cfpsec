@@ -9,7 +9,7 @@ with open("README.md", encoding='utf8') as readme:
 
 setup(
     name="cfpsec",
-    version="2.0",
+    version="2.0.1",
     author="Alexandre Borges",
     author_email="reverseexploit@proton.me",
     license="GPL-3.0-or-later",
@@ -26,6 +26,10 @@ setup(
         "colorama>=0.4.6",
         "requests>=2.26.0",
     ],
-    scripts=['cfpsec/cfpsec.py'],
+    entry_points={
+        'console_scripts': [
+            'cfpsec=cfpsec.cfpsec:main',
+        ],
+    },
     package_data={'': ['README.md, LICENSE']},
 )
