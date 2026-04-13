@@ -9,7 +9,7 @@ with open("README.md", encoding='utf8') as readme:
 
 setup(
     name="cfpsec",
-    version="1.5",
+    version="2.0",
     author="Alexandre Borges",
     author_email="reverseexploit@proton.me",
     license="GNU GPL v3.0",
@@ -24,9 +24,8 @@ setup(
     'Programming Language :: Python :: 3',
     ],
     install_requires=[
-        "colorama",
-        "simplejson",
-        "requests",
+        "colorama>=0.4.6",
+        "requests>=2.26.0",
     ],
     scripts=['cfpsec/cfpsec.py'],
     package_data={'': ['README.md, LICENSE']},

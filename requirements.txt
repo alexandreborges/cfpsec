@@ -1,3 +1,2 @@
-colorama>=0.4.4
-simplejson>=3.17.6
-requests>=2.25.0
+colorama>=0.4.6
+requests>=2.26.0
